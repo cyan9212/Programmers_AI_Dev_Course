@@ -13,8 +13,7 @@ np.random.normal(loc=1.56, scale=0.67, size=(5,6))
 
 
 # np.random.randint()을 사용하여 10부터 20까지 임의의 정수로 채워진 3 x 4 모양의 배열을 만들어줍니다.
-C = 
-np.random.randint(10, 21, size=(3,4))
+C = np.random.randint(10, 21, size=(3,4))
 
 
 print('-------------A의 출력-------------')
