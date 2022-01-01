@@ -1,8 +1,8 @@
-﻿![](Aspose.Words.83e78e49-5834-420f-a5b6-65bd840c7008.001.png)
+﻿![](Aspose.Words.df023f07-1f09-45c2-b2b5-ea4d94f3c4e3.001.png)
 
 Public 
 
-`Documentation Settings![](Aspose.Words.83e78e49-5834-420f-a5b6-65bd840c7008.001.png)`
+`	`Documentation Settings![](Aspose.Words.df023f07-1f09-45c2-b2b5-ea4d94f3c4e3.001.png)
 
 Environment
 
@@ -71,21 +71,7 @@ response = requests.request("GET", url, headers=headers, data=payload)
 
 print(response.text)
 
-![](Aspose.Words.83e78e49-5834-420f-a5b6-65bd840c7008.001.png)
-
-Example Response
-
-200 OK
-
-Body 
-
-Header(4)
-
-{
-
-    `"name": "cyan9212"`
-
-}
+![](Aspose.Words.df023f07-1f09-45c2-b2b5-ea4d94f3c4e3.001.png)
 
 GET
 
@@ -104,7 +90,7 @@ View More
 
 import requests
 
-url = "http://127.0.0.1:5000/echo?string=apple"
+url = ""
 
 payload={}
 
@@ -114,17 +100,7 @@ response = requests.request("GET", url, headers=headers, data=payload)
 
 print(response.text)
 
-![](Aspose.Words.83e78e49-5834-420f-a5b6-65bd840c7008.001.png)
-
-Example Response
-
-200 OK
-
-Body 
-
-Header(4)
-
-"apple"
+![](Aspose.Words.df023f07-1f09-45c2-b2b5-ea4d94f3c4e3.001.png)
 
 GET
 
@@ -153,39 +129,7 @@ response = requests.request("GET", url, headers=headers, data=payload)
 
 print(response.text)
 
-![](Aspose.Words.83e78e49-5834-420f-a5b6-65bd840c7008.001.png)
-
-Example Response
-
-200 OK
-
-Body 
-
-Header(4)
-
-View More
-
-[
-
-{
-
-    `"id": 1,`
-
-    `"name": "Arrow",`
-
-    `"stock": 2`
-
-},
-
-{
-
-        `"id": 2,`
-
-        `"name": "Lance",`
-
-        `"stock": 3`
-
-},
+![](Aspose.Words.df023f07-1f09-45c2-b2b5-ea4d94f3c4e3.001.png)
 
 POST
 
@@ -197,9 +141,9 @@ BODYraw
 
 {
 
-        `"name": "Spear",`
+`    `"name": "Spear",
 
-        `"stock": 1`
+`    `"stock": 1
 
 }
 
@@ -224,25 +168,7 @@ response = requests.request("POST", url, headers=headers, data=payload)
 
 print(response.text)
 
-![](Aspose.Words.83e78e49-5834-420f-a5b6-65bd840c7008.001.png)
-
-Example Response
-
-200 OK
-
-Body 
-
-Header(4)
-
-{
-
-`  `"id": 7,
-
-`  `"name": "Spear",
-
-`  `"stock": 1
-
-}
+![](Aspose.Words.df023f07-1f09-45c2-b2b5-ea4d94f3c4e3.001.png)
 
 DEL
 
@@ -261,7 +187,7 @@ View More
 
 import requests
 
-url = "http://127.0.0.1:5000/weapon/4"
+url = "weapon/id"
 
 payload={}
 
@@ -271,25 +197,7 @@ response = requests.request("DELETE", url, headers=headers, data=payload)
 
 print(response.text)
 
-![](Aspose.Words.83e78e49-5834-420f-a5b6-65bd840c7008.001.png)
-
-Example Response
-
-200 OK
-
-Body 
-
-Header(4)
-
-{
-
-`  `"id": 4,
-
-`  `"name": "Spear",
-
-`  `"stock": 1
-
-}
+![](Aspose.Words.df023f07-1f09-45c2-b2b5-ea4d94f3c4e3.001.png)
 
 PUT
 
@@ -308,9 +216,9 @@ View More
 
 import requests
 
-url = "http://127.0.0.1:5000/weapon/2"
+url = "http://127.0.0.1:5000/weapon/4"
 
-payload = "{\r\n    \"name\": \"Lance\",\r\n    \"stock\": 3\r\n}"
+payload={}
 
 headers = {}
 
@@ -318,26 +226,4 @@ response = requests.request("PUT", url, headers=headers, data=payload)
 
 print(response.text)
 
-![](Aspose.Words.83e78e49-5834-420f-a5b6-65bd840c7008.001.png)
-
-Example Response
-
-200 OK
-
-Body 
-
-Header(4)
-
-[
-
-`  `{
-
-`    `"id": 2,
-
-`    `"name": "Lance",
-
-`    `"stock": 3
-
-`  `}
-
-]
+![](Aspose.Words.df023f07-1f09-45c2-b2b5-ea4d94f3c4e3.001.png)
