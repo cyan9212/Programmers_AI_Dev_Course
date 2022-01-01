@@ -1,8 +1,8 @@
-﻿![](Aspose.Words.bd9b4f77-a958-46dd-b036-52721913b0a3.001.png)
+﻿![](Aspose.Words.83e78e49-5834-420f-a5b6-65bd840c7008.001.png)
 
 Public 
 
-`	`Documentation Settings![](Aspose.Words.bd9b4f77-a958-46dd-b036-52721913b0a3.001.png)
+`	`Documentation Settings![](Aspose.Words.83e78e49-5834-420f-a5b6-65bd840c7008.001.png)
 
 Environment
 
@@ -14,7 +14,7 @@ Double Column
 
 Language
 
-cURL
+Python - Requests
 # **bicsubi\_core**
 - [Introduction ](https://documenter.getpostman.com/view/7440345/UVRHi3gs#intro)
 
@@ -57,9 +57,35 @@ Example Request
 
 whoami
 
-curl --location --request GET 'http://127.0.0.1:5000/whoami'
+View More
 
-![](Aspose.Words.bd9b4f77-a958-46dd-b036-52721913b0a3.001.png)
+import requests
+
+url = "http://127.0.0.1:5000/whoami"
+
+payload={}
+
+headers = {}
+
+response = requests.request("GET", url, headers=headers, data=payload)
+
+print(response.text)
+
+![](Aspose.Words.83e78e49-5834-420f-a5b6-65bd840c7008.001.png)
+
+Example Response
+
+200 OK
+
+Body 
+
+Header(4)
+
+{
+
+`  `"name": "cyan9212"
+
+}
 
 GET
 
@@ -74,9 +100,31 @@ Example Request
 
 echo?string="string"
 
-curl --location --request GET ''
+View More
 
-![](Aspose.Words.bd9b4f77-a958-46dd-b036-52721913b0a3.001.png)
+import requests
+
+url = "http://127.0.0.1:5000/echo?string=apple"
+
+payload={}
+
+headers = {}
+
+response = requests.request("GET", url, headers=headers, data=payload)
+
+print(response.text)
+
+![](Aspose.Words.83e78e49-5834-420f-a5b6-65bd840c7008.001.png)
+
+Example Response
+
+200 OK
+
+Body 
+
+Header(4)
+
+"apple"
 
 GET
 
@@ -91,9 +139,53 @@ Example Request
 
 weapon
 
-curl --location --request GET 'http://127.0.0.1:5000/weapon'
+View More
 
-![](Aspose.Words.bd9b4f77-a958-46dd-b036-52721913b0a3.001.png)
+import requests
+
+url = "http://127.0.0.1:5000/weapon"
+
+payload={}
+
+headers = {}
+
+response = requests.request("GET", url, headers=headers, data=payload)
+
+print(response.text)
+
+![](Aspose.Words.83e78e49-5834-420f-a5b6-65bd840c7008.001.png)
+
+Example Response
+
+200 OK
+
+Body 
+
+Header(4)
+
+View More
+
+[
+
+`  `{
+
+`    `"id": 1,
+
+`    `"name": "Arrow",
+
+`    `"stock": 2
+
+`  `},
+
+`  `{
+
+`    `"id": 2,
+
+`    `"name": "Lance",
+
+`    `"stock": 3
+
+`  `},
 
 POST
 
@@ -118,17 +210,39 @@ Example Request
 
 weapon
 
-curl --location --request POST 'http://127.0.0.1:5000/weapon' \
+View More
 
---data-raw '{
+import requests
 
-`    `"name": "Spear",
+url = "http://127.0.0.1:5000/weapon"
 
-`    `"stock": 1
+payload = "{\r\n    \"name\": \"Spear\",\r\n    \"stock\": 1\r\n}"
 
-}'
+headers = {}
 
-![](Aspose.Words.bd9b4f77-a958-46dd-b036-52721913b0a3.001.png)
+response = requests.request("POST", url, headers=headers, data=payload)
+
+print(response.text)
+
+![](Aspose.Words.83e78e49-5834-420f-a5b6-65bd840c7008.001.png)
+
+Example Response
+
+200 OK
+
+Body 
+
+Header(4)
+
+{
+
+`  `"id": 7,
+
+`  `"name": "Spear",
+
+`  `"stock": 1
+
+}
 
 DEL
 
@@ -143,9 +257,39 @@ Example Request
 
 weapon/id
 
-curl --location --request DELETE 'weapon/id'
+View More
 
-![](Aspose.Words.bd9b4f77-a958-46dd-b036-52721913b0a3.001.png)
+import requests
+
+url = "http://127.0.0.1:5000/weapon/4"
+
+payload={}
+
+headers = {}
+
+response = requests.request("DELETE", url, headers=headers, data=payload)
+
+print(response.text)
+
+![](Aspose.Words.83e78e49-5834-420f-a5b6-65bd840c7008.001.png)
+
+Example Response
+
+200 OK
+
+Body 
+
+Header(4)
+
+{
+
+`  `"id": 4,
+
+`  `"name": "Spear",
+
+`  `"stock": 1
+
+}
 
 PUT
 
@@ -160,6 +304,40 @@ Example Request
 
 weapon/id
 
-curl --location --request PUT 'http://127.0.0.1:5000/weapon/4'
+View More
 
-![](Aspose.Words.bd9b4f77-a958-46dd-b036-52721913b0a3.001.png)
+import requests
+
+url = "http://127.0.0.1:5000/weapon/2"
+
+payload = "{\r\n    \"name\": \"Lance\",\r\n    \"stock\": 3\r\n}"
+
+headers = {}
+
+response = requests.request("PUT", url, headers=headers, data=payload)
+
+print(response.text)
+
+![](Aspose.Words.83e78e49-5834-420f-a5b6-65bd840c7008.001.png)
+
+Example Response
+
+200 OK
+
+Body 
+
+Header(4)
+
+[
+
+`  `{
+
+`    `"id": 2,
+
+`    `"name": "Lance",
+
+`    `"stock": 3
+
+`  `}
+
+]
