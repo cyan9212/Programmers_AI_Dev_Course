@@ -169,23 +169,23 @@ View More
 
 {
 
-    "id": 1,
+    `"id": 1,`
 
-    "name": "Arrow",
+    `"name": "Arrow",`
 
-    "stock": 2
+    `"stock": 2`
 
 },
 
-`  `{
+{
 
-`    `"id": 2,
+        `"id": 2,`
 
-`    `"name": "Lance",
+        `"name": "Lance",`
 
-`    `"stock": 3
+        `"stock": 3`
 
-`  `},
+},
 
 POST
 
@@ -197,9 +197,9 @@ BODYraw
 
 {
 
-`    `"name": "Spear",
+        `"name": "Spear",`
 
-`    `"stock": 1
+        `"stock": 1`
 
 }
 
