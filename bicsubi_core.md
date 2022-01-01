@@ -2,7 +2,7 @@
 
 Public 
 
-`	`Documentation Settings![](Aspose.Words.83e78e49-5834-420f-a5b6-65bd840c7008.001.png)
+`Documentation Settings![](Aspose.Words.83e78e49-5834-420f-a5b6-65bd840c7008.001.png)`
 
 Environment
 
@@ -83,7 +83,7 @@ Header(4)
 
 {
 
-`  `  "name": "cyan9212"
+    `"name": "cyan9212"`
 
 }
 
@@ -167,15 +167,15 @@ View More
 
 [
 
-`  `{
+{
 
-`    `  "id": 1,
+    "id": 1,
 
-`    `  "name": "Arrow",
+    "name": "Arrow",
 
-`    `  "stock": 2
+    "stock": 2
 
-`  `},
+},
 
 `  `{
 
